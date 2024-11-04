@@ -1,0 +1,15 @@
+[package]
+name = "lime-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lime-domain = {path = "../lime-domain"}
+
+actix-web = "4"
+serde = { version = "1.0.214", features = ["derive"] }
+toml = "0.8.19"
+log = "0.4.22"
+structured-logger = "1.0.3"
+tokio = "1.41.0"
+uuid = { version = "1.11.0", features = ["v7", "fast-rng"] }
